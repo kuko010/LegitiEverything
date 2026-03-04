@@ -1,0 +1,1 @@
+give @s minecraft:furnace[custom_data={"source":1b}, block_state={lit:"true"}]
