@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+echo "[0/5] Checkout bolt just in case..."
+git checkout bolt
+
 echo "[1/5] Pushing and committing to bolt..."
 git add .
 git commit -m "pre-merge"
