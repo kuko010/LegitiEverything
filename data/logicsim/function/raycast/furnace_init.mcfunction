@@ -1,1 +1,0 @@
-execute anchored eyes positioned ^ ^ ^ run function logicsim:raycast/furnace_step
