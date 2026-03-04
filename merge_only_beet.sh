@@ -1,16 +1,27 @@
 #!/bin/bash
-echo "Switching to main branch..."
-git checkout main || exit 1
+set -e
 
-echo "Overwriting logicsim from bolt..."
-git checkout bolt -- data/logicsim || exit 1
+echo "[1/5] Pushing and committing to bolt..."
+git add .
+git commit -m "pre-merge"
+git push
 
-echo "Staging changes..."
+echo "[2/5] Stashing untracked files..."
+git stash push -u -m "stash untracked before logicsim merge"
+
+echo "[3/5] Switching to main branch..."
+git checkout main
+
+echo "[4/5] Overwriting logicsim from bolt..."
+git checkout bolt -- data/logicsim
+
+echo "[5/5] Staging and committing..."
 git add data/logicsim
-
-echo "Committing..."
 git commit -m "Override logicsim folder from bolt branch"
 echo "Done! logicsim is now updated from bolt."
 
-echo "Switching to bolt branch..."
-git checkout bolt || exit 1
+echo "[6/5] Switching back to bolt branch..."
+git checkout bolt
+
+echo "[7/5] Restoring untracked files..."
+git stash pop || echo "[WARN] Nothing to restore"
