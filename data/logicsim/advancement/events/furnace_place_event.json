@@ -16,6 +16,6 @@
       }
     },
     "rewards": {
-      "function": "logicsim:events/spawn_source_marker"
+      "function": "logicsim:events/spawn_source_marker_furnace"
     }
   }
