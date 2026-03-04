@@ -1,6 +1,13 @@
 {
-    "pack": {
-        "pack_format": 81,
-        "description": "§3youtube.com/c/legitimoose"
-    }
+  "pack": {
+    "min_format": [
+      88,
+      0
+    ],
+    "max_format": [
+      88,
+      0
+    ],
+    "description": ""
+  }
 }
