@@ -11,3 +11,6 @@ git add data/logicsim
 echo "Committing..."
 git commit -m "Override logicsim folder from bolt branch"
 echo "Done! logicsim is now updated from bolt."
+
+echo "Switching to bolt branch..."
+git switch bolt || exit 1
