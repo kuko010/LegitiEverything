@@ -1,1 +1,0 @@
-execute as @a if items entity @s weapon.offhand stick[minecraft:item_name=wand] run function code:wand
