@@ -1,2 +1,0 @@
-scoreboard objectives remove tp_femboy
-scoreboard objectives add tp_femboy trigger
