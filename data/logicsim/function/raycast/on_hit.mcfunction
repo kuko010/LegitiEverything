@@ -1,1 +1,2 @@
-particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute if block ~ ~ ~ furnace[lit=true] run function logicsim:place/furnace
+execute if block ~ ~ ~ gray_concrete run function logicsim:place/on_gray
