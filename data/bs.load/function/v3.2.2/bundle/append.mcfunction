@@ -1,0 +1,7 @@
+execute unless data storage bs:data load.bundle run data modify storage bs:data load.bundle set value {link: "https://api.mcbookshelf.dev/download?version=3.2.2,modules=", message: {text: "[bundle]", click_event: {action: "open_url"}, hover_event: {action: "show_text", value: "Click to open URL"}}}
+$data modify storage bs:data load.bundle._module set value "$(module)"
+$execute store result storage bs:data load.bundle._major int 1 run scoreboard players get $$(module).major load.status
+$execute store result storage bs:data load.bundle._minor int 1 run scoreboard players get $$(module).minor load.status
+$execute store result storage bs:data load.bundle._patch int 1 run scoreboard players get $$(module).patch load.status
+function bs.load:v3.2.2/bundle/concat with storage bs:data load.bundle
+data modify storage bs:data load.bundle.message.click_event.url set string storage bs:data load.bundle.link 0 -1
