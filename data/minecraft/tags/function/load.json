@@ -3,6 +3,7 @@
 	"code:load",
 	"prefix:load",
 	"logicsim:load",
-	"funnyhaha:load"
+	"funnyhaha:load",
+	"#load:_private/load"
 	]
 }
