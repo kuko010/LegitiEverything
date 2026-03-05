@@ -1,0 +1,1 @@
+$data modify storage bs:data load.bundle.link set value "$(link)$(_module):$(_major).$(_minor).$(_patch),"

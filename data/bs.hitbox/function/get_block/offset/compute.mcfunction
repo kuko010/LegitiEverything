@@ -1,0 +1,32 @@
+data modify storage bs:data hitbox.offsets append value {x: 0, z: 0, k: [0, 0]}
+execute store result storage bs:data hitbox.offsets[-1].k[0] int 1 run scoreboard players get #u bs.ctx
+execute store result storage bs:data hitbox.offsets[-1].k[1] int 1 run scoreboard players get #v bs.ctx
+execute store result entity @s Pos[1] double 0.000000007450580596923828 run scoreboard players operation #u bs.ctx *= 3129871 bs.const
+execute store result entity @s Pos[2] double 0.000000007450580596923828 run scoreboard players operation #v bs.ctx *= 116129781 bs.const
+execute at @s positioned -0.00000000186264514923095703 ~33554496 ~33554496 facing ~ ~-0.00000000372529029846191406 ~-0.00000000372529029846191406 positioned ^ ^ ^-0.00000000186264514923095703 positioned ~ ~33554431.999999996 ~33554431.999999996 facing ~ ~-0.00000000745058059692382812 ~-0.00000000745058059692382812 positioned ^ ^ ^-0.00000000372529029846191406 positioned ~ ~67108863.99999999 ~67108863.99999999 facing ~ ~-0.00000001490116119384765625 ~-0.00000001490116119384765625 positioned ^ ^ ^-0.00000000745058059692382812 positioned ~ ~134217727.99999999 ~134217727.99999999 facing ~ ~-0.00000002980232238769531250 ~-0.00000002980232238769531250 positioned ^ ^ ^-0.00000001490116119384765625 positioned ~ ~268435455.99999997 ~268435455.99999997 facing ~ ~-0.0000000596046447753906250 ~-0.0000000596046447753906250 positioned ^ ^ ^-0.00000002980232238769531250 positioned ~ ~536870911.99999994 ~536870911.99999994 facing ~ ~-0.0000001192092895507812500 ~-0.0000001192092895507812500 positioned ^ ^ ^-0.0000000596046447753906250 positioned ~ ~1073741823.9999999 ~1073741823.9999999 facing ~ ~-0.000000238418579101562500 ~-0.000000238418579101562500 positioned ^ ^ ^-0.0000001192092895507812500 positioned ~ ~2147483647.9999998 ~2147483647.9999998 facing ~ ~-0.00000047683715820312500 ~-0.00000047683715820312500 positioned ^ ^ ^-0.000000238418579101562500 positioned ~ ~4294967295.9999995 ~4294967295.9999995 facing ~ ~-0.0000009536743164062500 ~-0.0000009536743164062500 positioned ^ ^ ^-0.00000047683715820312500 positioned ~ ~8589934591.999999 ~8589934591.999999 facing ~ ~-0.000001907348632812500 ~-0.000001907348632812500 positioned ^ ^ ^-0.0000009536743164062500 positioned ~ ~17179869183.999998 ~17179869183.999998 facing ~ ~-0.00000381469726562500 ~-0.00000381469726562500 positioned ^ ^ ^-0.000001907348632812500 positioned ~ ~34359738367.999996 ~34359738367.999996 facing ~ ~-0.0000076293945312500 ~-0.0000076293945312500 positioned ^ ^ ^-0.00000381469726562500 positioned ~ ~68719476735.99999 ~68719476735.99999 facing ~ ~-0.000015258789062500 ~-0.000015258789062500 positioned ^ ^ ^-0.0000076293945312500 positioned ~ ~137438953471.99998 ~137438953471.99998 facing ~ ~-0.00003051757812500 ~-0.00003051757812500 positioned ^ ^ ^-0.000015258789062500 positioned ~ ~274877906943.99997 ~274877906943.99997 facing ~ ~-0.0000610351562500 ~-0.0000610351562500 positioned ^ ^ ^-0.00003051757812500 positioned ~ ~549755813887.99994 ~549755813887.99994 facing ~ ~-0.0001220703125 ~-0.0001220703125 positioned ^ ^ ^-0.0000610351562500 positioned ~ ~1099511627775.9999 ~1099511627775.9999 facing ~ ~-0.000244140625 ~-0.000244140625 positioned ^ ^ ^-0.0001220703125 positioned ~ ~2199023255551.9998 ~2199023255551.9998 facing ~ ~-0.00048828125 ~-0.00048828125 positioned ^ ^ ^-0.000244140625 positioned ~ ~4398046511103.9995 ~4398046511103.9995 facing ~ ~-0.0009765625 ~-0.0009765625 positioned ^ ^ ^-0.00048828125 positioned ~ ~8796093022207.999 ~8796093022207.999 facing ~ ~-0.001953125 ~-0.001953125 positioned ^ ^ ^-0.0009765625 positioned ~ ~17592186044415.998 ~17592186044415.998 facing ~ ~-0.00390625 ~-0.00390625 positioned ^ ^ ^-0.001953125 positioned ~ ~35184372088831.996 ~35184372088831.996 facing ~ ~-0.0078125 ~-0.0078125 positioned ^ ^ ^-0.00390625 positioned ~ ~70368744177663.99 ~70368744177663.99 facing ~ ~-0.015625 ~-0.015625 positioned ^ ^ ^-0.0078125 positioned ~ ~140737488355327.98 ~140737488355327.98 facing ~ ~-0.03125 ~-0.03125 positioned ^ ^ ^-0.015625 positioned ~ ~281474976710655.97 ~281474976710655.97 facing ~ ~-0.0625 ~-0.0625 positioned ^ ^ ^-0.03125 positioned ~ ~562949953421311.94 ~562949953421311.94 facing ~ ~-0.125 ~-0.125 positioned ^ ^ ^-0.0625 positioned ~ ~1125899906842623.9 ~1125899906842623.9 facing ~ ~-0.25 ~-0.25 positioned ^ ^ ^-0.125 positioned ~ ~2251799813685247.8 ~2251799813685247.8 facing ~ ~-0.5 ~-0.5 positioned ^ ^ ^-0.25 positioned ~ ~4503599627370495.5 ~4503599627370495.5 facing ~ ~-1 ~-1 positioned ^ ^ ^-0.5 positioned ~ ~9007199254740991 ~9007199254740991 facing ~ ~-2 ~-2 positioned ^ ^ ^-1 positioned ~ ~18014398509481982 ~18014398509481982 facing ~ ~-4 ~-4 positioned ^ ^ ^2 run tp @s ~ 0 0.0
+execute store result score #a bs.ctx run data get entity @s Pos[0] 1073741824
+scoreboard players operation #a bs.ctx -= #u bs.ctx
+execute store result score #b bs.ctx run scoreboard players operation #a bs.ctx -= #v bs.ctx
+scoreboard players operation #b bs.ctx *= #b bs.ctx
+scoreboard players operation #b bs.ctx *= 42317861 bs.const
+scoreboard players operation #a bs.ctx *= 11 bs.const
+execute store result score #u bs.ctx store result score #v bs.ctx run scoreboard players operation #a bs.ctx += #b bs.ctx
+scoreboard players operation #u bs.ctx /= 65536 bs.const
+scoreboard players operation #u bs.ctx *= 268435456 bs.const
+scoreboard players operation #u bs.ctx /= 268435456 bs.const
+execute if score #u bs.ctx matches ..-1 run scoreboard players add #u bs.ctx 16
+scoreboard players operation #u bs.ctx *= 10000000 bs.const
+scoreboard players operation #u bs.ctx /= 15 bs.const
+scoreboard players remove #u bs.ctx 5000000
+scoreboard players operation #u bs.ctx /= 2 bs.const
+scoreboard players operation #v bs.ctx /= 16777216 bs.const
+scoreboard players operation #v bs.ctx *= 268435456 bs.const
+scoreboard players operation #v bs.ctx /= 268435456 bs.const
+execute if score #v bs.ctx matches ..-1 run scoreboard players add #v bs.ctx 16
+scoreboard players operation #v bs.ctx *= 10000000 bs.const
+scoreboard players operation #v bs.ctx /= 15 bs.const
+scoreboard players remove #v bs.ctx 5000000
+scoreboard players operation #v bs.ctx /= 2 bs.const
+execute store result storage bs:out hitbox.offset.x double 0.0000001 run scoreboard players get #u bs.ctx
+execute store result storage bs:out hitbox.offset.z double 0.0000001 run scoreboard players get #v bs.ctx
+data modify storage bs:data hitbox.offsets[-1] merge from storage bs:out hitbox.offset
