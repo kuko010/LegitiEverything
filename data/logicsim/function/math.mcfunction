@@ -7,3 +7,4 @@ scoreboard players operation $math.acos.x bs.in = @s x_pos
 function #bs.math:acos
 tellraw @s [{text: "acos(Player X) = ", color: "dark_gray"}, {score: {name: "$math.acos", objective: "bs.out"}, color: "gold"}]
 tellraw @s [{text: "X+Z = "}, {score: {name: "@s", objective: "temp"}}]
+say lolko

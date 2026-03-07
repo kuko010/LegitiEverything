@@ -1,1 +1,0 @@
-function logicsim:math
