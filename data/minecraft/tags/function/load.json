@@ -1,13 +1,1 @@
-<<<<<<< HEAD
 {"values":["#load:_private/load"]}
-=======
-{
-	"values": [
-	"code:load",
-	"prefix:load",
-	"logicsim:load",
-	"funnyhaha:load",
-	"#load:_private/load"
-	]
-}
->>>>>>> 3de062a118d6c8bdf4b243e40be14423508e2e56
