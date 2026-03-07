@@ -1,0 +1,5 @@
+data modify storage bs:data load.status append value ["", ": ", ""]
+data modify storage bs:data load.status[-1][0] set from storage bs:ctx _[0].module
+data modify storage bs:data load.status[-1][2] set from storage bs:ctx _[0].version
+data remove storage bs:ctx _[0]
+execute if data storage bs:ctx _[0] run function bs.load:v3.2.2/status/module
