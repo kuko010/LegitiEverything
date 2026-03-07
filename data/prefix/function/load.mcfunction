@@ -6,6 +6,7 @@ team add dev
 
 team add femboy
 team add afk
+team add transgender
 
 team modify am prefix [{"color":"#96f9b2","text":"ᴀᴍ ","bold":true},{"text":"| ","color":"#555555","bold":true}]
 team modify fm prefix [{"color":"#8686fb","text":"ꜰᴍ ","bold":true},{"text":"| ","color":"#555555","bold":true}]
@@ -17,3 +18,6 @@ team modify dev suffix [{"text":" | ","color":"#555555","bold":true}, {"text":""
 
 team modify femboy prefix [{"text":"","extra":[{"text":"F","color":"#F7C9F2","bold":true},{"text":"e","color":"#ECC9F5","bold":true},{"text":"m","color":"#E0C9F7","bold":true},{"text":"b","color":"#D5C3FA","bold":true},{"text":"o","color":"#CCCFFC","bold":true},{"text":"y","color":"#C2DAFD","bold":true},{"text":" "}]},{"text":"| ","color":"#555555","bold":true}]
 team modify afk prefix [{"text":"","extra":[{"text":"A","color":"#45FF86","bold":true},{"text":"F","color":"#42CF73","bold":true},{"text":"K","color":"#409E61","bold":true},{"text":" "}]},{"text":"| ","color":"#555555","bold":true}]
+
+
+team modify transgender prefix [{"text":"","extra":[{"text":"T","color":"#5BCEFA","bold":true},{"text":"r","color":"#7AC7ED","bold":true},{"text":"a","color":"#99BFE0","bold":true},{"text":"n","color":"#B7B8D2","bold":true},{"text":"s","color":"#D6B0C5","bold":true},{"text":"g","color":"#F5A9B8","bold":true},{"text":"e","color":"#F7BAC6","bold":true},{"text":"n","color":"#F9CBD4","bold":true},{"text":"d","color":"#FBDDE3","bold":true},{"text":"e","color":"#FDEEF1","bold":true},{"text":"r","color":"#FFFFFF","bold":true}]},{"text":" | ","color":"#555555","bold":true}]

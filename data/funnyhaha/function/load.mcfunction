@@ -10,5 +10,8 @@ scoreboard objectives add rank-femboy trigger
 scoreboard objectives remove rank-afk
 scoreboard objectives add rank-afk trigger
 
+scoreboard objectives remove rank-transgender
+scoreboard objectives add rank-afk trigger
+
 scoreboard objectives remove rank-remove-all
 scoreboard objectives add rank-remove-all trigger
