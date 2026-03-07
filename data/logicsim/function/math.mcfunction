@@ -6,4 +6,4 @@ execute store result score $i1 bolt.expr.temp run data get storage example:stora
 scoreboard players operation $value math -= $i1 bolt.expr.temp
 data modify storage example:storage values append value 0
 execute store result storage example:storage values[-1] int 1 run scoreboard players get $value math
-say err
+tellraw @a [{text: "Value: "}, {storage: "example:storage", nbt: "values[-1]"}]
