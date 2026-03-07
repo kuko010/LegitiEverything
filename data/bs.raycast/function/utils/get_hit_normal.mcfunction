@@ -1,6 +1,0 @@
-execute if score $raycast.hit_face bs.lambda matches 5 run data modify storage bs:lambda raycast.hit_normal set value [1, 0, 0]
-execute if score $raycast.hit_face bs.lambda matches 4 run data modify storage bs:lambda raycast.hit_normal set value [-1, 0, 0]
-execute if score $raycast.hit_face bs.lambda matches 3 run data modify storage bs:lambda raycast.hit_normal set value [0, 0, 1]
-execute if score $raycast.hit_face bs.lambda matches 2 run data modify storage bs:lambda raycast.hit_normal set value [0, 0, -1]
-execute if score $raycast.hit_face bs.lambda matches 1 run data modify storage bs:lambda raycast.hit_normal set value [0, 1, 0]
-execute if score $raycast.hit_face bs.lambda matches 0 run data modify storage bs:lambda raycast.hit_normal set value [0, -1, 0]
