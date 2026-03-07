@@ -4,6 +4,7 @@
 	"prefix:tick",
 	"logicsim:tick",
 	"murder:tick",
+	"rank:tick",
 	"funnyhaha:tick"
 	]
 }

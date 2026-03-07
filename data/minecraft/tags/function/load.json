@@ -4,6 +4,7 @@
 	"prefix:load",
 	"logicsim:load",
 	"funnyhaha:load",
+	"rank:load",
 	"#load:_private/load"
 	]
 }
