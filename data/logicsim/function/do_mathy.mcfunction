@@ -1,1 +1,1 @@
-function logicsim:mmathy
+function logicsim:math
