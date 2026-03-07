@@ -13,6 +13,6 @@
     }
   },
   "rewards": {
-    "function": "logicsim:logicary/place"
+    "function": "logicsim:place"
   }
 }
