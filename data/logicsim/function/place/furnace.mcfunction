@@ -1,1 +1,1 @@
-particle angry_villager ~ ~ ~ ~ ~ ~ 1 10
+summon tnt ~0.5 ~ ~0.5 {explosion_power: 0}
