@@ -1,2 +1,1 @@
 give @s minecraft:furnace[block_state={lit: "true"}]
-say lolko
